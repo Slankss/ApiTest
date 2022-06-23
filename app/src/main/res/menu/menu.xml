@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstPage"
+        android:title="İlk Sayfa"
+        android:icon="@android:drawable/ic_menu_send"
+        ></item>
+
+    <item
+        android:id="@+id/secondPage"
+        android:title="İkinci Sayfa"
+        android:icon="@android:drawable/star_big_on"
+        ></item>
+
+    <item
+        android:id="@+id/thirdPage"
+        android:title="Üçüncü Sayfa"
+        android:icon="@android:drawable/stat_sys_phone_call"
+        ></item>
+
+
+
+</menu>
