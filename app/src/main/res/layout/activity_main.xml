@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradient_background"
+    tools:context=".View.MainActivity">
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@color/purple_500"
+        app:itemIconTint="@color/twitch_purple"
         app:itemTextColor="@color/black"
         app:labelVisibilityMode="auto"
         app:layout_constraintBottom_toBottomOf="parent"

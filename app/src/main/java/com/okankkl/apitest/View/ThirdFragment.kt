@@ -1,16 +1,15 @@
-package com.okankkl.apitest
+package com.okankkl.apitest.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.okankkl.apitest.databinding.FragmentSecondBinding
+import com.okankkl.apitest.R
 
 
-class SecondFragment : Fragment() {
+class ThirdFragment : Fragment() {
 
-    private lateinit var binding : FragmentSecondBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +18,6 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -27,8 +25,7 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSecondBinding.inflate(layoutInflater)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_third, container, false)
     }
 
 

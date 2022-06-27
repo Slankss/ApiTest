@@ -1,10 +1,10 @@
-package com.okankkl.apitest
+package com.okankkl.apitest.View
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.okankkl.apitest.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        loadFragment(FirstFragment())
+        loadFragment(FreeApisFragment())
         bottom = findViewById(R.id.bottomNavigation) as BottomNavigationView
 
         bottom.setOnNavigationItemSelectedListener {
             when (it.itemId) {
 
-                R.id.firstPage -> loadFragment(FirstFragment())
+                R.id.freeApi -> loadFragment(FreeApisFragment())
                 R.id.secondPage -> loadFragment(SecondFragment())
                 R.id.thirdPage -> loadFragment(ThirdFragment())
             }

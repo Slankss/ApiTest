@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/firstPage"
-        android:title="İlk Sayfa"
-        android:icon="@android:drawable/ic_menu_send"
+        android:id="@+id/freeApi"
+        android:title="Ücretsiz Apiler"
+        android:icon="@drawable/ic_free_api"
         ></item>
 
     <item
         android:id="@+id/secondPage"
         android:title="İkinci Sayfa"
-        android:icon="@android:drawable/star_big_on"
+        android:icon="@drawable/ic_university_svgrepo_com"
         ></item>
 
     <item
