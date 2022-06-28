@@ -39,6 +39,7 @@ android {
 dependencies {
 
     def nav_version = "2.4.2"
+    def javaVersion = '2.2.8'
     def retrofitVersion = '2.9.0'
 
     implementation 'androidx.core:core-ktx:1.8.0'
@@ -55,4 +56,9 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    implementation "io.reactivex.rxjava2:rxjava:$javaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
 }

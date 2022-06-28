@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="10dp"
+    app:contentPadding="20dp">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtUniversityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/lblUniversityDomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domain :"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtUniversityName"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/txtUniversityDomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="domain"
+            android:layout_marginStart="10dp"
+            android:layout_alignBottom="@id/lblUniversityDomain"
+            android:layout_toRightOf="@id/lblUniversityDomain">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
