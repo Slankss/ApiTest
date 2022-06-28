@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.freeApi -> loadFragment(FreeApisFragment())
                 R.id.secondPage -> loadFragment(SecondFragment())
-                R.id.thirdPage -> loadFragment(ThirdFragment())
             }
             true
         }

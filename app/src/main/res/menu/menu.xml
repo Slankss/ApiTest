@@ -13,11 +13,7 @@
         android:icon="@drawable/ic_university_svgrepo_com"
         ></item>
 
-    <item
-        android:id="@+id/thirdPage"
-        android:title="Üçüncü Sayfa"
-        android:icon="@android:drawable/stat_sys_phone_call"
-        ></item>
+
 
 
 

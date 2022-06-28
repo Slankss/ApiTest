@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.okankkl.apitest.Adapter.ApiAdapter
 import com.okankkl.apitest.Adapter.UniversityAdapter
 import com.okankkl.apitest.Model.University
+import com.okankkl.apitest.R
 import com.okankkl.apitest.Service.UniversityApi
 import io.reactivex.disposables.CompositeDisposable
 import com.okankkl.apitest.databinding.FragmentSecondBinding
@@ -42,6 +44,7 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.progressBar2.visibility = View.VISIBLE
 
     }
 
