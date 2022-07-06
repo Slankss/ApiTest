@@ -20,7 +20,7 @@ class FreeApisFragment : Fragment() {
 
     private lateinit var binding : FragmentFreeApisBinding
     private val viewModel by lazy { ApiViewModel() }
-   private lateinit var apiAdapter : ApiAdapter
+    private lateinit var apiAdapter : ApiAdapter
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

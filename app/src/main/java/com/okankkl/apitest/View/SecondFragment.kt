@@ -17,6 +17,7 @@ import io.reactivex.disposables.CompositeDisposable
 import com.okankkl.apitest.databinding.FragmentSecondBinding
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.android.schedulers.AndroidSchedulers
+import kotlinx.coroutines.*
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -31,7 +32,11 @@ class SecondFragment : Fragment() {
     private val BASE_URL=  "http://universities.hipolabs.com/"
     private var universityList = ArrayList<University>()
     private lateinit var recyclerViewAdapter : UniversityAdapter
+    private var job : Job? = null
 
+    val exceptionHandler = CoroutineExceptionHandler { coroutineContext, throwable ->
+        println("Error : ${throwable.localizedMessage}")
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,13 +73,11 @@ class SecondFragment : Fragment() {
             .build()
 
         val service = retrofit.create(UniversityApi::class.java)
-        val call = service.getData()
 
-        call.enqueue(object : retrofit2.Callback<List<University>> {
-            override fun onResponse(
-                call: Call<List<University>>,
-                response: Response<List<University>>
-            ) {
+        job = CoroutineScope(Dispatchers.IO).launch {
+            val response = service.getData()
+
+            withContext(Dispatchers.Main){
                 if(response.isSuccessful){
                     binding.progressBar2.visibility = View.GONE
                     response.body()?.let {
@@ -91,14 +94,16 @@ class SecondFragment : Fragment() {
                 }
             }
 
-            override fun onFailure(call: Call<List<University>>, t: Throwable) {
-                Toast.makeText(context,"Veriler Yüklenmedi",Toast.LENGTH_LONG).show()
-                println(t.localizedMessage)
-            }
-        })
+        }
+
 
     }
 
 
+    override fun onDestroy() {
+        super.onDestroy()
+
+        job?.cancel()
+    }
 
 }
