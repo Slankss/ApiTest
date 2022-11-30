@@ -13,4 +13,4 @@
 
 ### Screen shots of the application : 
 
-![ss1](https://github.com/Slankss/ImagesOfApplications/_ss1_ApiTest.png)
+![ss1](https://github.com/Slankss/ImagesOfApplications/ss1_ApiTest.png)
