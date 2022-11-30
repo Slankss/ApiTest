@@ -1,5 +1,5 @@
 # ApiTest
 ## Using retrofit library example
 
-### * Used Technologies
+### * Used Technologies *
 #### Viewbinding
