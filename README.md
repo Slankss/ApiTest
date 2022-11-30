@@ -13,4 +13,4 @@
 
 ### Screen shots of the application : 
 
-![Image of Yaktocat](https://github.com/Slankss/ImagesOfApplications_ss1_ApiTest.png)
+![ss1](https://github.com/Slankss/ImagesOfApplications/_ss1_ApiTest.png)
