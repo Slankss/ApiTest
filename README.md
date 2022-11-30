@@ -1,7 +1,9 @@
 # ApiTest
 ## Using retrofit library example
 
-### *Used Technologies*
+*This application contains free API lists and universities in Turkey.
+
+### *Used Technologies
 - Viewbinding
 - Navigation
 - Retrofit
